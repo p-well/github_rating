@@ -14,23 +14,17 @@ def get_week_ago_date():
 def fetch_popular_projects(week_ago_date, top_repos_amount):
     search_repo_url = 'https://api.github.com/search/repositories'
     qualifiers = {
+        'sort': 'stars',
+        'order': 'desc',
+        'per_page': top_repos_amount,
         'q': 'created:>{}'.format(week_ago_date),
-                        'language': 'python',
-                        'sort': 'stars',
-                        'order': 'desc',
-                        'per_page': top_repos_amount
-        # 'sort': 'stars',
-        # 'order': 'desc',
-        # 'q':'created: > week_ago_date',
-        # #'language': 'python',
-        # 'per_page': top_repos_amount
+        'language': 'python'
     }
     try:
         raw_response = requests.get(search_repo_url, params=qualifiers)
         most_popular_projects_data = raw_response.json().get('items')
     except requests.exceptions.RequestException:
         most_popular_projects_data = []
-    print(len(most_popular_projects_data))
     return most_popular_projects_data
 
 
@@ -49,7 +43,7 @@ def fetch_open_issues_amount(project_data):
 
 def print_popular_project_info(project_data, issues_amount, counter):
     print("""
-{}  Repo name: {}
+{}. Repo name: {}
     Stars: {}
     Description: {}
     Issues amount: {}
@@ -85,5 +79,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# https://api.github.com/search/repositories?q=created:%3E2018-07-05+language:python&sort=stars&order=desc&per_page=20
