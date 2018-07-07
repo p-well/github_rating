@@ -71,7 +71,7 @@ def main():
                 project_data,
                 project_issues_amount,
                 counter
-           )
+               )
             counter += 1
     else:
         print('Request to GitHub API failed.')
