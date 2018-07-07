@@ -36,31 +36,31 @@ Encoding changing may be required for correct script running on Windows platform
 
 <b> >python github_rating.py</b>
 
-1.  Repo name: homelab
+1.  Project: homelab
     Stars: 1383
     Description: Brad's homelab setup
     Issues amount: 2
     Link: https://github.com/bradfitz/homelab
 
-2.  Repo name: hacker-job-trends
+2.  Project: hacker-job-trends
     Stars: 418
     Description: None
     Issues amount: 8
     Link: https://github.com/timqian/hacker-job-trends
 
-3.  Repo name: laravel-self-diagnosis
+3.  Project: laravel-self-diagnosis
     Stars: 361
     Description: Perform Self-Diagnosis Tests On Your Laravel Application
     Issues amount: 4
     Link: https://github.com/beyondcode/laravel-self-diagnosis
 
-4.  Repo name: CssGitHubWindows
+4.  Project: CssGitHubWindows
     Stars: 356
     Description: (UserStyle) GitHub Windows Edition [MIT]
     Issues amount: 5
     Link: https://github.com/Athari/CssGitHubWindows
 
-5.  Repo name: Machine_Learning_Journey
+5.  Project: Machine_Learning_Journey
     Stars: 311
     Description: This is the Curriculum for "Machine Learning Journey" By Siraj Raval on Youtube
     Issues amount: 0

@@ -43,7 +43,7 @@ def fetch_open_issues_amount(project_data):
 
 def print_popular_project_info(project_data, issues_amount, counter):
     print("""
-{}. Repo name: {}
+{}. Project: {}
     Stars: {}
     Description: {}
     Issues amount: {}
