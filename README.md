@@ -4,7 +4,7 @@ This is CLI program used for searching for the most popular Python repositories 
 
 Script finds 20 most stargazers counted repositories created during the last week and prints out the following infomation: <br/>
 
-- Projct name
+- Project name
 - Stars amount
 - Project description
 - Opened issues amount
